@@ -1,4 +1,5 @@
 // Exercícios que fiz para estudo de C#
+// Apostila usada para aprender a linguagem: https://www.caelum.com.br/apostila-csharp-orientacao-objetos/
 // usando WIndowsFOrmsApp, criado um botão que ao ser clicado mostra a mensagem "HELLO WORD".
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,8 @@ namespace WindowsFormsApp1
     }
 }
 
-//Crie 3 variáveis com as idades dos seus melhores amigos e/ou familiares. Em seguida, pegue essas 3 idades e calcule a média delas. Exiba o resultado em um MessageBox
+//  VARIAVEIS
+// Crie 3 variáveis com as idades dos seus melhores amigos e/ou familiares. Em seguida, pegue essas 3 idades e calcule a média delas. Exiba o resultado em um MessageBox
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -56,3 +58,4 @@ namespace WindowsFormsApp1
         }
     }
 }
+
