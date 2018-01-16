@@ -1,6 +1,7 @@
 // Exercícios que fiz para estudo de C#
 // Apostila usada para aprender a linguagem: https://www.caelum.com.br/apostila-csharp-orientacao-objetos/
-// usando WIndowsFOrmsApp, criado um botão que ao ser clicado mostra a mensagem "HELLO WORD".
+// Variaveis
+// usando WIndowsFOrmsApp
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,40 +23,39 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //criado um botão que ao ser clicado mostra a mensagem "HELLO WORD".
             MessageBox.Show("HELLO WORD");
         }
-    }
-}
 
-//  VARIAVEIS
-// Crie 3 variáveis com as idades dos seus melhores amigos e/ou familiares. Em seguida, pegue essas 3 idades e calcule a média delas. Exiba o resultado em um MessageBox
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace WindowsFormsApp1
-{
-    public partial class Form1 : Form
-    {
-        public Form1()
+        private void button2_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            // Crie 3 variáveis com as idades dos seus melhores amigos e/ou familiares. Em seguida, pegue essas 3 idades e calcule a média delas. Exiba o resultado em um MessageBox
             int idadeBruno = 28;
             int idadeJana = 30;
             int idadeBetina = 2;
             int media = (idadeBruno + idadeBruno + idadeJana) / 3;
             MessageBox.Show("A média das idades é " + media);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Crie um programa com três variáveis inteiras, a, b, c, com quaisquer valores. Depois crie 3 variáveis double, delta, a1, a2, com a fórmula anterior. Imprima a1 e a2 em um MessageBox.
+            int a = 1,
+                b = 20,
+                c = 2;
+            double delta = (b * b) - (4 * a * c);
+            double raiz = Math.Sqrt(delta);
+            double a1 = (-b + raiz) / (2 * a);
+            double a2 = (-b - raiz) / (2 * a);
+            MessageBox.Show("Resultado: a1= " + a1);
+            MessageBox.Show("Resultado: a2= " + a2);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
-
